@@ -1,0 +1,1 @@
+No me acuerdo de la sitaxis de c++ para realizar el codigo
