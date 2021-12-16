@@ -1,3 +1,30 @@
-Segui1.
+Segui1a.
+Una institución ofrece un curso que prepara a los estudiantes para el examen de admisión a la UdeA. El año pasado, diez de los estudiantes que completaron este curso tomaron el examen. La institución quiere saber qué tan bien les fue a sus estudiantes en el examen. Se le pide que escriba un programa para resumir los resultados. 
+"Imagine":  Se le ha dado una lista de estos 10 estudiantes. Junto a cada nombre se escribe un 1 si el estudiante aprobó el examen o un 2 si el estudiante fallo. 
+Si mas de 8 estudiantes aprobaron el examen escriba un mensaje que diga <excelente instructor>.
 
-Segui2.
+Segui1b.
+El factorial de un entero "n" no negativo se escribe como n! (n factorial) y se define de la siguiente manera:
+n! = n · (n – 1) · (n – 2) · . . . · 1 ( para valores de n mayores o iguales a 1)
+y
+n! = 1 ( para n = 0 o n = 1).
+
+Unsando las tecnicas de programcion orienta a objetos (POO) que hemos estudiado, cree una clase que nos devuleva el valor de e^x:
+
+e^x = 1 + (x/1!) + (x^2/2!) +  (x^3/3!) +  .......
+
+Su clase debe tener almenos las siguientes caracteristicas:
+dos variables privadas: el valor de "x" y "N"la presicion (el numero de terminos de la serie).
+Debe tener un constructor.
+Ademas debe tener dos funciones mas:
+a) una que lea un entero no negativo, que calcule su factorial.
+b) una que calcule el valor de e^x.
+Finalmente debe tener una funcion que muestre el valor de e^x
+
+Segui1c
+Escriba una aplicación que juegue a adivinar un número de la siguiente manera: la aplicación
+elije un número del 1 al 1000 y le pide que lo adivine. Si su elección es la correcta, el juego ter-
+mina. Si no es correcta, la aplicación le indica si su elección es mayor o menor que el número
+correcto. No hay límite en cuanto al número de elecciones que puede realizar. Su programa
+deberá iterar hasta que el jugador adivine correctamente. Ademas, una vez el jugador adivine
+el numero, debera tener la opcion de jugar de nuevo si desea.
