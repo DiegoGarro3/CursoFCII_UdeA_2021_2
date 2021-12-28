@@ -9,17 +9,18 @@ Santiago Quintero Cordoba
 
 using namespace std;
 
-class exponencial{
+class exponencial{//Creacion de una clase llamada exponencial
 
-    public:
+    public://Declaracion de las funciones publicas
         
-        exponencial();
-        unsigned  int factorial(unsigned int);
-        double e();
-        void mostrar();
+        exponencial();//Constructor de la clase
+        unsigned  int factorial(unsigned int);//Funcion que recibe un entero positivo
+        																			//y devuelve un entero positivo
+        double e();//Funcion que devuelve un doble
+        void mostrar();//Funcion que no devuelve ningun tipo de dato
 
-    private:
+    private://Declaracion de las variables privadas
     
-        unsigned int N;
-        double x;
+        unsigned int N;//Variable cuyo valor es un entero postivo
+        double x;//Variable de valor doble
 };
