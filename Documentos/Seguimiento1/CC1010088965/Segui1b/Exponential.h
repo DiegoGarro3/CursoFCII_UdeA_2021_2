@@ -1,17 +1,13 @@
-#include <string> 
-using std::string;
 
 class Exponential {
     public:
-    Exponential( string ); 
-    void establecerNombreCurso( string ); 
-    string obtenerNombreCurso();
-    void mostrarMensaje(); 
-    void recibirCalificaciones();
-    void mostrarReporteCalificaciones(); // muestra un reporte con base en las calificaciones
-    int maximo( int, int, int ); // determina el máximo de 3 valores
+        Exponential(float, int); 
+        int factorial(unsigned int);
+        void calculateExponential();
+        void showResult();
     
     private:
-    string nombreCurso;
-    int calificacionMaxima;
+        float x;
+        int N;
+        float result;
 };
