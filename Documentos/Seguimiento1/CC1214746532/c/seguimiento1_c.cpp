@@ -28,6 +28,9 @@ int main(){
                 cout<<"¿Quieres volver a jugar?"<<endl;
                 cout<<"s para jugar, cualquier otra tecla para salir"<<endl;
                 cin >> jugar;//se ingresa si se quiere volver a jugar
+                if (jugar=="s"){
+                        numero = 1+rand()%(1001-1); //numero aleatorio entre 1 y 1000 
+                }
             }
 
             else if (adivinar > numero){//el numero es mayor al que se debe adivinar
