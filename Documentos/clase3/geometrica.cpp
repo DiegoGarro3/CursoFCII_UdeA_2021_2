@@ -10,18 +10,23 @@ int main(){
   double a, r;
   int j;
   double total;
+  int limit;
 
   a = 1.0; r = 0.5;
   total = 0;
   j = 0;
+  
+  cout << "Ingrese el límite de la serie: ";
+  cin >> limit;
+  
 
-  while (j < 11)
+  while (j < limit)
     {
       total = total + a*pow(r,j);
       j++;    
     }
 
-  cout << "la suma de la seri geometrica es: " << total << endl;
+  cout << "la suma de la serie geometrica es: " << total << endl;
 
   return 0;
 

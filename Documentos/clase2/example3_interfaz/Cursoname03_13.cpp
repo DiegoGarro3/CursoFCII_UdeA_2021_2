@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-#include "Cursoname.h" // inclulle la definicion de la clase
+#include "Cursoname.h" // incluye la definicion de la clase
 
 int main()
 {
