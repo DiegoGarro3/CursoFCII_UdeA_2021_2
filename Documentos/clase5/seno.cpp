@@ -61,7 +61,6 @@ int main()
       cout << "el seno para el termino: " << jj << " es: " << mysin << endl;
       cout << "La diferencia en el termino: " << jj << " es: " << diff << endl;
       cout << " " << endl;
-
       jj++;
       
     }
