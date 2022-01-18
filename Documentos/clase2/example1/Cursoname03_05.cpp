@@ -9,6 +9,7 @@ using namespace std;
 class LibroCalificar
 {
 public:
+
    //Función que establece el nombre del curso.
    void setCourseName( string name )
    {      

@@ -15,7 +15,7 @@ int main(){
   total = 0;
   j = 0;
   
-  for ( ; j<11 ; j++)
+  for ( j ; j<11 ; j++)
     {
       total = total + a*pow(r,j);
     }
@@ -29,7 +29,7 @@ int main(){
     }
   */
 
-  cout << "la suma de la seri geometrica es: " << total << endl;
+  cout << "la suma de la serie geometrica es: " << total << endl;
 
   return 0;
 

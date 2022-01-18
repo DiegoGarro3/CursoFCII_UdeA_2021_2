@@ -4,8 +4,17 @@ using namespace std;
 
 int main()
 {
-  int first = 10;
-  int second = 10;
+  int first(0);
+  int second(0);
+  
+  cout << "This programme determinates if two given numbers are or not equal each other" << endl;
+  
+  cout << " Insert the first integer number ";
+  cin >> first;
+  
+  cout << " Insert the second integer number ";
+  cin >> second;
+  
   string result;
   
   result = (first == second) ? "equal" : "not equal";
