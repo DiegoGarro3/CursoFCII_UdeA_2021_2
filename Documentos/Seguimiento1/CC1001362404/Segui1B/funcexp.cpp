@@ -8,6 +8,7 @@ using namespace std;
 funcexp::funcexp(float xx, int kk) {
     x = xx;
     k = kk;
+    compute();
 }
 
 int funcexp::factorial(unsigned int number){
@@ -27,7 +28,7 @@ int funcexp::factorial(unsigned int number){
 
 void funcexp::compute() {
     resultado = 0; 
-    for (int n = 0; n < k; n++)
+    for (int n = 0; n < k; ++n)
     {
         resultado += pow(x, n) / factorial(n);
 	
