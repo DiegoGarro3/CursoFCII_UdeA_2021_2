@@ -52,9 +52,9 @@ void LibroCalificar::mostrarMensaje()
 // determina el promedio de la clase, con base en las 10 calificaciones escritas por el usuario
 void LibroCalificar::determinarPromedioClase()
 {
-  int total; // suma de las calificaciones introducidas por el usuario
+  float total; // suma de las calificaciones introducidas por el usuario
   int contadorCalif; // número de la calificación a introducir a continuación
-  int calificacion; // el valor de la calificacion introducida por el usuario
+  float calificacion; // el valor de la calificacion introducida por el usuario
   int promedio; // promedio de calificaciones
   
   total = 0; 

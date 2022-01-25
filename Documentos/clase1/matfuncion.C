@@ -26,5 +26,5 @@ int main()
   cout<<"log(exp(1.0)) "<<log(exp(1.0))<<endl;
   cout<<"exp(2.30259) "<<exp(2.30259)<<endl;
 
-  //return 0; 
+  return 0; 
 }

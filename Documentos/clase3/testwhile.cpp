@@ -7,7 +7,7 @@ int main(){
   int producto = 3;
   
   while ( producto <= 100 ){
-    producto = 3 * producto;
+    producto *= 3 ;
     cout << " el valor de producto es " << producto << endl;
   }
 

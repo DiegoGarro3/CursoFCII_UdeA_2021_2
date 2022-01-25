@@ -14,7 +14,7 @@ public:
    {
       cout << "Bienvendo al libro de calificaciones para\n" << courseName << "!" 
          << endl;
-      return 
+      return; 
    } 
 };  
 
