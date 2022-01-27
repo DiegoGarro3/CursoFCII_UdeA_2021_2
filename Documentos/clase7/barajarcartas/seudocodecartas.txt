@@ -1,0 +1,15 @@
+Inicializar el arreglo palo
+Inicializar el arreglo cara
+Inicializar el arreglo mazo
+
+Para cada una de las 52 cartas
+     Elegir posición del mazo al azar
+     	    Mientras la posición en el mazo ya se haya elegido
+     	    Elegir posición del mazo al azar
+     
+     Colocar el número de carta en la posición elegida en el mazo
+
+Para cada una de las 52 cartas
+     Para cada posición del arreglo mazo
+          Si la posición contiene el número deseado de la carta
+     	     Imprimir la cara y el palo de la carta
