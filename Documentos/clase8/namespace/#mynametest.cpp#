@@ -1,0 +1,9 @@
+#include <c:\\mibiblioteca\\comprDatos.cpp>
+using namespace comprDatos;
+int valor;
+{
+  int value;
+  cout << “Introduzca un valor entero: ”;
+  valor = getanInt();
+  cout << “El número entero introducido es: ” << valor << endl;
+  return 0;
