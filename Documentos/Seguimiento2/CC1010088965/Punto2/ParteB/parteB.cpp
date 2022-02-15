@@ -18,6 +18,8 @@ string decimalToHexadecimal(string);
 
 int main() {
     string fileName;
+    string fileNameOut;
+    string end = "-out.txt";
     cout << "Introduzca el nombre del archivo (incluyendo terminacion) con los datos en tabla," << endl;
     cout << "con cada fila teniendo este formato:" << endl;
     cout << "<Numero a convertir> <Sistema de entrada> <Sistema de salida>" << endl;
@@ -26,16 +28,25 @@ int main() {
     cout << "Nombre del archivo: " << endl;
     cin >> fileName;
 
+    fileNameOut = fileName.substr(0, fileName.length() - 4) + end;
+
     ifstream fileNumbersToCovert(fileName);
+    ofstream fileNumbersToCovertOut(fileNameOut);
 
     if (fileNumbersToCovert.fail()) {
         cout << "No se pudo abrir el archivo" << endl;
         exit(1);
     }
 
+    if (fileNumbersToCovertOut.fail()) {
+        cout << "No se pudo crear el archivo" << endl;
+        exit(1);
+    }
+
     cout << "A continuacion se muestra la tabla leida con los valores convertidos:" << endl;
 
     cout << setw(20) << "Valor" << setw(10) << "Sistema1" << setw(10) << "Sistema2" << setw(25) << "ValorSalida" << endl;
+    fileNumbersToCovertOut << "Valor Sistema1 Sistema2 ValorSalida" << endl;
 
     string inputValue;
     char inputSystem;
@@ -44,6 +55,9 @@ int main() {
     while (fileNumbersToCovert >> inputValue >> inputSystem >> outputSystem) {
         cout << setw(20) << inputValue << setw(10) << inputSystem << setw(10) << outputSystem 
             << setw(25) << convertValueFromInputSysToOutSys(inputValue, inputSystem, outputSystem) << endl;
+        
+        fileNumbersToCovertOut << inputValue << " " << inputSystem << " " << outputSystem 
+            << " " << convertValueFromInputSysToOutSys(inputValue, inputSystem, outputSystem) << endl;
     }
     
     return 0;
