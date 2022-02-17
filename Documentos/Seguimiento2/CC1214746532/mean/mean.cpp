@@ -13,8 +13,7 @@ los valores almacenados en el arreglo llamado valores_prueba
 using namespace std;
 
 //declaracion de variables
-const int valores_a_tomar=3;//numero de elementos del arreglo
-array<int, valores_a_tomar> valores_prueba={0,2,3};//arreglo
+const int valores_a_tomar=14;//numero de elementos del arreglo
 
 int suma{0};//suma para calcular los promedios
 int suma2{0};//suma para calcular la suma de los cuadrados(significado del 2)
@@ -25,8 +24,10 @@ double varianza(array<int, valores_a_tomar>);//funcion que devolvera la varianza
 
 int main(){
 
+    array<int, valores_a_tomar> valores_prueba={89, 95, 72, 83, 99, 54, 86, 75,92, 73, 79, 75, 82, 73};//arreglo
+
     cout<<"El valor medio del arreglo dado es: "<<calc_prom(valores_prueba)<<endl;//se muestra por pantalla el promedio del arreglo
-//    cout<<"La varianza del arreglo dado es: "<<varianza(valores_prueba)<<endl;////se muestra por pantalla la varianza del arreglo
+    cout<<"La varianza del arreglo dado es: "<<varianza(valores_prueba)<<endl;////se muestra por pantalla la varianza del arreglo
 }
 
 //IMPLEMENTACION DE LAS FUNCIONES
