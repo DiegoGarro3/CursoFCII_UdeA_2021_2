@@ -1,0 +1,7 @@
+num	sistema_numerico1	sistema_numerico2
+41	decimal	binario
+41	decimal	hexadecimal
+10011	binario	decimal
+1001	binario	hexadecimal
+1ABF0	hexadecimal	binario
+EDCA	hexadecimal	decimal
