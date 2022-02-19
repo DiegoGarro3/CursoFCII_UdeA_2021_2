@@ -14,7 +14,7 @@ class estadistica {
         int n;        
         double avg;
         double var;
-        //At end because it's a flexible array (why??)
+        //At end because it's a flexible array 
         double x[];
         
 };
