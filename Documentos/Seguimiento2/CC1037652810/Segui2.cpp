@@ -213,12 +213,13 @@ int main()
     ofstream ListConverted( "ListConverted.dat", ios::out );
     // muestra el contenido del archivo (hasta eof)
     ListConverted << fixed << setw(5) << num << setw(18) << X << setw(18) << Y << setw(18) <<  "Num Converted" << endl;
+    Listtoconvert >> num >> X >> Y;
     while ( !Listtoconvert.eof() )
       { 
-          Listtoconvert >> num >> X >> Y;
           //cout << num << X << Y << endl;
           numconverted=whicConver(num,X,Y);
           cout << fixed << setw(5) << num << setw(18) << X << setw(18) << Y << setw(18) <<  numconverted << endl;
           ListConverted << fixed << setw(5) << num << setw(18) << X << setw(18) << Y << setw(18) <<  numconverted << endl;
+          Listtoconvert >> num >> X >> Y;
       }
 }
