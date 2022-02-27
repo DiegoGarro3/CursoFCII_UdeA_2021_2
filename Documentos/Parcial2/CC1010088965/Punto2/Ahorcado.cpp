@@ -19,7 +19,9 @@ Ahorcado::Ahorcado() {
     srand(time(NULL));
 };
 
-Ahorcado::~Ahorcado() {};
+Ahorcado::~Ahorcado() {
+    string().swap(word);
+};
 
 void Ahorcado::setWord(const string & wordIn) { word = wordIn; };
 string Ahorcado::getWord() const { return word; };
@@ -114,7 +116,7 @@ void Ahorcado::play() {
                             localGameContinued = false;
                         } else {
                             printWord();
-                            cout << "Adivinó correctamente. Si quiere adivine toda la palabra, de lo contrario escriba N: ";
+                            cout << "Letra correcta. Si quiere adivine toda la palabra, de lo contrario escriba N: ";
                             cin >> playerSelection;
                             if (playerSelection != "N" && playerSelection != "n") {
                                 if (playerSelection == word) {

@@ -28,7 +28,6 @@ class Ahorcado {
         int lifes;
         map<char, bool> lettersFound;
         string word;
-
 };
 
 #endif
