@@ -20,6 +20,8 @@ class Juego{//Creacion de una clase llamada Juego
 
         void repetir();
 
+        void figura(int );
+
 
     private://Declaracion de las variables privadas
 
