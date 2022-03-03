@@ -1,0 +1,7 @@
+num   sistema1    sistema2
+41    Decimal     Binario
+41    Decimal     Hexadecimal
+10011 Binario     Decimal
+1001  Binario     Hexadecimal
+9C4   Hexadecimal Binario
+9C4   Hexadecimal Decimal
