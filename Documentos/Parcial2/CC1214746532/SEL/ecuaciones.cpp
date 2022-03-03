@@ -88,6 +88,7 @@ void Ecuacion::ini(){//Inicializacion de la solucion aproximada
 
 void Ecuacion::Jacobi(){
 
+    int veces=1;
     vector<float> X0 = X_0;
     float tol=pow(10,-6);
     string correr="si";
@@ -127,12 +128,15 @@ void Ecuacion::Jacobi(){
                         cout<<"X"<<p<<"= "<<X[p]<<endl;
                     }
 
+                    cout<<"El metodo necesito de "<<veces<<" iteraciones"<<endl;
+
                     correr="no";
                 }
             }
  
         }
 
+        veces++;
         X0=X;
         con_int ++;
         if (converge == "no" && con_int==20){
@@ -147,6 +151,7 @@ void Ecuacion::Jacobi(){
 
 void Ecuacion::SOR(){//iteracion del metodo SOR
 
+    int veces=1;
     vector<float> X0=X_0;
     float tol=pow(10,-6);//tolerancia
     string correr="si";
@@ -189,12 +194,15 @@ void Ecuacion::SOR(){//iteracion del metodo SOR
         
                         cout<<"X"<<p<<"= "<<X[p]<<endl;
                     }
+
+                    cout<<"El metodo necesito de "<<veces<<" iteraciones"<<endl;
                     correr="no";
                 }
             }
  
         }
 
+        veces++;
         X0=X;
         con_int ++;
         if (converge == "no" && con_int==20){
