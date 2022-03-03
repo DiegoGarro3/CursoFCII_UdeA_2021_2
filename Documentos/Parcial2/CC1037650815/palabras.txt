@@ -1,0 +1,14 @@
+arbol
+universidad
+perro
+cerveza
+hamburguesa
+libros
+pasatiempo
+simposio
+isla
+mar
+carro
+vacaciones
+covid
+familia
