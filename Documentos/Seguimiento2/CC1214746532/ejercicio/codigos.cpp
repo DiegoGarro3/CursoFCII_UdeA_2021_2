@@ -1,3 +1,5 @@
+//santiago Quintero Cordoba
+//A usar///////////////
 #include <iostream>
 #include <cstring>
 #include <cmath>
@@ -26,8 +28,9 @@ int cociente{0};
 int resi{0};
 int tam = 0;
 int suma=0;
+///////
 
-void dec_a_hex(){
+void dec_a_hex(){// funcion que muestra en pantalla el paso de decimales a hexadecimales
 
     cout<<"ingrese el numero que quiere convertir de decimal a hexaecimal"<<endl;
 
@@ -58,7 +61,7 @@ void dec_a_hex(){
     
 }
 
-void dec_a_bi(){
+void dec_a_bi(){// funcion que muestra en pantalla el paso de decimales a binario
 
     cout<<"ingrese el numero que quiere convertir de decimal a binario"<<endl;
 
@@ -89,7 +92,7 @@ void dec_a_bi(){
     cout<<"\n";    
 }
 
-void hex_a_dec(){
+void hex_a_dec(){// funcion que muestra en pantalla el paso de hexadecimal a decimal
 
 
     cout<<"ingrese el numero que quiere convertir de hexadecimal a decimal"<<endl;
@@ -116,7 +119,7 @@ void hex_a_dec(){
     cout<< suma <<endl;
 }
 
-void hex_a_bin(){
+void hex_a_bin(){// funcion que muestra en pantalla el paso de hexadecimal a binario
 
 
     cout<<"ingrese el numero que quiere convertir de hexadecimal a binario"<<endl;
@@ -145,7 +148,7 @@ void hex_a_bin(){
     cout<<"\n";
 }
 
-void bin_a_dec(){
+void bin_a_dec(){// funcion que muestra en pantalla el paso de binario a decimal
 
 
     cout<<"ingrese el numero que quiere convertir de binario a decimal"<<endl;
@@ -172,7 +175,7 @@ void bin_a_dec(){
     cout<< suma <<endl;
 }
 
-void bin_a_hex(){
+void bin_a_hex(){// funcion que muestra en pantalla el paso de binario a hexadecimal
 
 
     cout<<"ingrese el numero que quiere convertir de binario a hexadecimal, "<<
@@ -208,6 +211,10 @@ void bin_a_hex(){
 }
 
 int main(){
+
+    /*Se pide entrar por teclado el tipo de datos y el numero y como desea que se convierta y segun
+    el caso entrara al ciclo correcto 
+    */
 
 
     cout<< "ingrese el sistema en el que va a iniciar "<<
