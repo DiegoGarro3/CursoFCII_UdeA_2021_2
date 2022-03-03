@@ -56,7 +56,7 @@ void Expiral::get_File()
     
     ofstream output(Circular::get_FileName());
     
-    /*
+    
     float t = 0;
     float dt = Circular::get_time() / Circular::get_steps();
     
@@ -66,15 +66,15 @@ void Expiral::get_File()
             << setw(8) << fixed << setprecision(2) << zpos(t)
             << endl;
         t += dt;
-    }*/
-    
+    }
+    /*
     for(size_t i=0; i<oldlines.size(); i++)
     {
         float t = stof( oldlines[i].substr(0, oldlines[i].find_first_of(" ")) );
         output << left << oldlines[i]
             << setw(8) << fixed << setprecision(2) << zpos(t)
             << endl;
-    }        
+    }*/       
         
     output.close();
 }

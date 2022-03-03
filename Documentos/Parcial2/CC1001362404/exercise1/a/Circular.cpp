@@ -76,7 +76,7 @@ float Circular::ypos(float t)
 }
 
 
-//Create and return an Output Document with < t, x, y >
+//Create and return an Output Document with < x, y > (OR < t, x, y >)
 
 bool Circular::check_FileExistence(const string& filename)
 {
@@ -125,8 +125,8 @@ void Circular::get_File()
     while(t < time && file_output.is_open())
     {
        
-        file_output << left 
-            << setw(8) << fixed << setprecision(2)<< t 
+        file_output << left
+            //<< setw(8) << fixed << setprecision(2)<< t  //uncomment to print a file including time steps
             << setw(8) << fixed << setprecision(2) << xpos(t)
             << setw(8) << fixed << setprecision(2) << ypos(t)
             << endl;
