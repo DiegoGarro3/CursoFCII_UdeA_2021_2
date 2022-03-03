@@ -42,7 +42,7 @@ class Circular{
     float xpos(float);
     float ypos(float); 
     
-    //~Circular(); //destructor
+    ~Circular(); //destructor
     
         
     private:

@@ -15,6 +15,8 @@ Circular::Circular(float rr, float ww, float aa, float tt, unsigned int nn){
     set_FileName();
 }
 
+Circular::~Circular(){}
+
 // Setting functions
 void Circular::set_r(float rr)
 {

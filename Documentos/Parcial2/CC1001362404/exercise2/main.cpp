@@ -100,7 +100,7 @@ int main(){
 	cout << endl;
 	
 	if (intentos_incorrectos == max_oportunidades){
-		cout << "Te has quedado sin intentos. La palabra correcta es " << word[random_num] << endl;
+		cout << "Te has quedado sin intentos. La palabra correcta es -> [" << word[random_num] << " ]" << endl;
 	}
 	
 	if(word_hidden.find(42) == std::string::npos){
