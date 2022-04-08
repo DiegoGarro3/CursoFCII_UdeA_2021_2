@@ -16,12 +16,13 @@ EqSystemSolver::EqSystemSolver(vector < vector<double> > Matrix, vector <double>
  systemofeq=Matrix;
  b=eq;
  
- double initialx=0, step=1, convergdifcriterion=0; //static
+ double initialx=0, step=1; //convergdifcriterion=0; //static
 
  size_t systemvectsize=systemofeq.size();
  for (size_t i=1; i<=systemvectsize; i++){ //to set initial guess and the other private vectors
-	 cout << "Introdusca el valor inicial de la variable " << i << endl;
-	 cin >> initialx;
+	 //cout << "Introdusca el valor inicial de la variable " << i << endl;
+	 //cin >> initialx;
+         initialx=0.;
 	 initialval.push_back(initialx);
          xsvalues.push_back(0);
          sucdifconverge.push_back(100);
@@ -29,8 +30,9 @@ EqSystemSolver::EqSystemSolver(vector < vector<double> > Matrix, vector <double>
  }
 
  cout<< setprecision(6)<< fixed;
- cout<<"Enter tolerable error: ";
- cin>>convergdifcriterion;
+ //cout<<"Enter tolerable error: ";
+ //cin>>convergdifcriterion;
+ double convergdifcriterion=0.01;
  e=convergdifcriterion;
 
 }
@@ -84,9 +86,9 @@ vector <double> EqSystemSolver::Relaxation()
 {  
   size_t systemvectsize=systemofeq.size();
   int k=1; //step
-  int N=100; //maximum number of iterations
+  int N=1000000; //maximum number of iterations
   double w=1.25; //parameter of the SOR (Relaxation method)
-  cout << fixed << left << setw(15) << "x1" << setw(15) << "x2" << setw(15) << "x3" << setw(15) << "x4" << setw(25) << "how many var converged?" << endl;
+  //cout << fixed << left << setw(15) << "x1" << setw(15) << "x2" << setw(15) << "x3" << setw(15) << "x4" << setw(25) << "how many var converged?" << endl;
 while ( k<=N){ //Maximum number of steps
 
     for (int i=0; i<systemvectsize; i++){ //over the number fo variables
@@ -103,13 +105,13 @@ while ( k<=N){ //Maximum number of steps
 
       xsvalues[i]=(1-w)*initialval[i]+(1/systemofeq[i][i])*w*(b[i]-sumatoria);
       sucdifconverge[i]=fabs(xsvalues[i]-initialval[i]);
-      cout  << fixed << setw(15) << left << xsvalues[i]; 
+      //cout  << fixed << setw(15) << left << xsvalues[i]; 
     } //all x_i values of k+1 iteration calculated
 
 
     int whichconv=0; // how many converged?
     for (int ii=0; ii<sucdifconverge.size(); ii++) { if (sucdifconverge[ii]<e){ whichconv=whichconv+1; } } //end if, then end for
-    cout << fixed << setw(25) << left << whichconv << endl;
+    //cout << fixed << setw(25) << left << whichconv << endl;
     
     if (whichconv==sucdifconverge.size() ){
           cout << "converged under the specific tolerance"  <<  endl; 
